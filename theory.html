@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- META
+    ................................................................................................................ -->
+    <meta charset="utf-8">
+    <title>10kKorean</title>
+    <meta name="description" content="10kKorean application theory page.">
+    <meta name="author" content="aleks10k">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FAVICON
+    ................................................................................................................ -->
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png')}}" type="image/png" >
+
+    <!-- FONTS
+    ................................................................................................................ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- CSS
+    ................................................................................................................ -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/theory-style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/theory-media.css')}}">
+
+</head>
+<body>
+    <!-- HEADER
+    ................................................................................................................ -->
+    <header id="Header" class="bg-light">
+        <!-- Hidden on mobile phones only
+        ............................................................................................................ -->
+        <div class="row hide-below-550">
+            <div id="Logo-bar">
+                <img src="{{ url_for('static', filename='images/logo_78x84.png')}}" width="78" height="84">
+            </div>
+        </div>
+
+        <br class="hide-below-550">
+        <!-- ....................................................................................................... -->
+        <!-- Visible on mobile phones only
+        ............................................................................................................ -->
+        <div class="row hide-above-550">
+            <div id="Logo-bar-mobile">
+                <img src="{{ url_for('static', filename='images/logo_80x80.png')}}" width="46" height="46">
+                <div class="col-04">
+                    <a class="links-mobile" href="/">app</a>
+                </div>
+                <div class="col-04">
+                    <a class="links-mobile" href="/about">about</a>
+                </div>
+            </div>
+        </div>
+    </header>
+        <!-- ....................................................................................................... -->
+    <!-- Hidden on mobile phones only
+    ................................................................................................................ -->
+    <section  class="hide-below-550 bg-light">
+        <div class="row">
+            <div class="col-01 align-center"></div>
+            <div class="col-01 align-center"><a id="Link-about" class="links" href="/">app</a></div>
+            <div class="col-01 align-center"><a id="Link-theory" class="links" href="/about">about</a></div>
+            <div class="col-09"></div>
+        </div>
+    </section>
+    <!-- ........................................................................................................... -->
+    <section class="bg-light margin-bottom align-center">
+        <p class="remove-top-margin">CONTENT</p>
+        <a class="content-links" href="#Alphabet">ALPHABET</a>
+        <a class="content-links" href="#IMSyllables">I + M SYLLABLES</a>
+        <a class="content-links" href="#IMFSyllables">I + M + F SYLLABLES</a>
+        <a class="content-links" href="#If-you-are">IF YOU ARE A NOVICE</a>
+        <a class="content-links" href="#Links">LINKS</a>
+        <br>
+        <br>
+        <p class="small-p"><span class="icon-font">volume_up</span></p>
+        <p class="small-p">CLICK ON LETTERS TO HEAR THEIR SOUND</p>
+        <br>
+    </section>
+    <!-- ALPHABET
+    ................................................................................................................ -->
+    <article>
+        <h1 id="Alphabet" class="border-none">ALPHABET</h1>
+        <a class="back-links" href="#Header">Back to CONTENT</a>
+        <br>
+        <br>
+        <p>The korean alphabet has 40 letters.</p>
+        <h2>Vowels</h2>
+        <br>
+        <!-- Hidden on mobile phones only
+        ............................................................................................................ -->
+        <table class="centered-tables hide-below-550">
+            <tr>
+                <td colspan="10" class="table-headers">10 basic vowels</td>
+                <td colspan="11" class="table-headers">11 compound vowels</td>
+            </tr>
+            <tr>
+                <td id="Ltr-a" class="medial-vowels">ㅏ</td>
+                <td id="Ltr-ya" class="medial-vowels">ㅑ</td>
+                <td id="Ltr-eo" class="medial-vowels">ㅓ</td>
+                <td id="Ltr-yeo" class="medial-vowels">ㅕ</td>
+                <td id="Ltr-o" class="medial-vowels">ㅗ</td>
+                <td id="Ltr-yo" class="medial-vowels">ㅛ</td>
+                <td id="Ltr-u" class="medial-vowels">ㅜ</td>
+                <td id="Ltr-yu" class="medial-vowels">ㅠ</td>
+                <td id="Ltr-eu" class="medial-vowels">ㅡ</td>
+                <td id="Ltr-i" class="medial-vowels">ㅣ</td>
+                <td id="Ltr-ae" class="medial-vowels compound">ㅐ</td>
+                <td id="Ltr-yae" class="medial-vowels compound">ㅒ</td>
+                <td id="Ltr-e" class="medial-vowels compound">ㅔ</td>
+                <td id="Ltr-ye" class="medial-vowels compound">ㅖ</td>
+                <td id="Ltr-wa" class="medial-vowels compound">ㅘ</td>
+                <td id="Ltr-wae" class="medial-vowels compound">ㅙ</td>
+                <td id="Ltr-oe" class="medial-vowels compound">ㅚ</td>
+                <td id="Ltr-wo" class="medial-vowels compound">ㅝ</td>
+                <td id="Ltr-we" class="medial-vowels compound">ㅞ</td>
+                <td id="Ltr-wi" class="medial-vowels compound">ㅟ</td>
+                <td id="Ltr-ui" class="medial-vowels compound">ㅢ</td>
+            </tr>
+            <tr>
+                <td class="medial-vowel-sounds">a</td>
+                <td class="medial-vowel-sounds">ya</td>
+                <td class="medial-vowel-sounds">eo</td>
+                <td class="medial-vowel-sounds">yeo</td>
+                <td class="medial-vowel-sounds">o</td>
+                <td class="medial-vowel-sounds">yo</td>
+                <td class="medial-vowel-sounds">u</td>
+                <td class="medial-vowel-sounds">yu</td>
+                <td class="medial-vowel-sounds">eu</td>
+                <td class="medial-vowel-sounds">i</td>
+                <td class="medial-vowel-sounds">ae</td>
+                <td class="medial-vowel-sounds">yae</td>
+                <td class="medial-vowel-sounds">e</td>
+                <td class="medial-vowel-sounds">ye</td>
+                <td class="medial-vowel-sounds">wa</td>
+                <td class="medial-vowel-sounds">wae</td>
+                <td class="medial-vowel-sounds">oe</td>
+                <td class="medial-vowel-sounds">wo</td>
+                <td class="medial-vowel-sounds">we</td>
+                <td class="medial-vowel-sounds">wi</td>
+                <td class="medial-vowel-sounds">ui</td>
+            </tr>
+        </table>
+        <!-- ....................................................................................................... -->
+        <!-- Visible on mobile phones only
+        ............................................................................................................ -->
+        <section class="hide-above-550">
+        <table class="centered-tables">
+            <tr>
+                <td id="m-Ltr-a" class="medial-vowels-mobile">ㅏ</td>
+                <td id="m-Ltr-ya" class="medial-vowels-mobile">ㅑ</td>
+                <td id="m-Ltr-eo" class="medial-vowels-mobile">ㅓ</td>
+                <td id="m-Ltr-yeo" class="medial-vowels-mobile">ㅕ</td>
+                <td id="m-Ltr-o" class="medial-vowels-mobile">ㅗ</td>
+                <td id="m-Ltr-yo" class="medial-vowels-mobile">ㅛ</td>
+                <td id="m-Ltr-u" class="medial-vowels-mobile">ㅜ</td>
+            </tr>
+            <tr>
+                <td class="medial-vowel-sounds">a</td>
+                <td class="medial-vowel-sounds">ya</td>
+                <td class="medial-vowel-sounds">eo</td>
+                <td class="medial-vowel-sounds">yeo</td>
+                <td class="medial-vowel-sounds">o</td>
+                <td class="medial-vowel-sounds">yo</td>
+                <td class="medial-vowel-sounds">u</td>
+            </tr>
+
+            <tr>
+                <td id="m-Ltr-yu" class="medial-vowels-mobile">ㅠ</td>
+                <td id="m-Ltr-eu" class="medial-vowels-mobile">ㅡ</td>
+                <td id="m-Ltr-i" class="medial-vowels-mobile">ㅣ</td>
+                <td id="m-Ltr-ae" class="medial-vowels-mobile compound">ㅐ</td>
+                <td id="m-Ltr-yae" class="medial-vowels-mobile compound">ㅒ</td>
+                <td id="m-Ltr-e" class="medial-vowels-mobile compound">ㅔ</td>
+                <td id="m-Ltr-ye" class="medial-vowels-mobile compound">ㅖ</td>
+            </tr>
+            <tr>
+                <td class="medial-vowel-sounds">yu</td>
+                <td class="medial-vowel-sounds">eu</td>
+                <td class="medial-vowel-sounds">i</td>
+                <td class="medial-vowel-sounds">ae</td>
+                <td class="medial-vowel-sounds">yae</td>
+                <td class="medial-vowel-sounds">e</td>
+                <td class="medial-vowel-sounds">ye</td>
+            </tr>
+            <tr>
+                <td id="m-Ltr-wa" class="medial-vowels-mobile compound">ㅘ</td>
+                <td id="m-Ltr-wae" class="medial-vowels-mobile compound">ㅙ</td>
+                <td id="m-Ltr-oe" class="medial-vowels-mobile compound">ㅚ</td>
+                <td id="m-Ltr-wo" class="medial-vowels-mobile compound">ㅝ</td>
+                <td id="m-Ltr-we" class="medial-vowels-mobile compound">ㅞ</td>
+                <td id="m-Ltr-wi" class="medial-vowels-mobile compound">ㅟ</td>
+                <td id="m-Ltr-ui" class="medial-vowels-mobile compound">ㅢ</td>
+            </tr>
+            <tr>
+                <td class="medial-vowel-sounds">wa</td>
+                <td class="medial-vowel-sounds">wae</td>
+                <td class="medial-vowel-sounds">oe</td>
+                <td class="medial-vowel-sounds">wo</td>
+                <td class="medial-vowel-sounds">we</td>
+                <td class="medial-vowel-sounds">wi</td>
+                <td class="medial-vowel-sounds">ui</td>
+            </tr>
+        </table>
+        </section>
+        <!-- ....................................................................................................... -->
+        <br>
+        <p class="small-p">click on a letter to hear it's sound</p>
+        <h2>Consonants</h2>
+        <br>
+        <!-- Hidden on mobile phones only
+        ............................................................................................................ -->        
+        <table class="centered-tables hide-below-550">
+            <tr>
+                <td colspan="14" class="table-headers">14 basic consonants</td>
+                <td colspan="5" class="table-headers">5 compound consonants</td>
+            </tr>
+            <tr>
+                <td id="Ltr-g" class="initial-consonants">ㄱ</td>
+                <td id="Ltr-n" class="initial-consonants">ㄴ</td>
+                <td id="Ltr-d" class="initial-consonants">ㄷ</td>
+                <td id="Ltr-r" class="initial-consonants">ㄹ</td>
+                <td id="Ltr-m" class="initial-consonants">ㅁ</td>
+                <td id="Ltr-b" class="initial-consonants">ㅂ</td>
+                <td id="Ltr-s" class="initial-consonants">ㅅ</td>
+                <td id="Ltr-nosound" class="initial-consonants">ㅇ</td>
+                <td id="Ltr-j" class="initial-consonants">ㅈ</td>
+                <td id="Ltr-ch" class="initial-consonants">ㅊ</td>
+                <td id="Ltr-k" class="initial-consonants">ㅋ</td>
+                <td id="Ltr-t" class="initial-consonants">ㅌ</td>
+                <td id="Ltr-p" class="initial-consonants">ㅍ</td>
+                <td id="Ltr-h" class="initial-consonants">ㅎ</td>
+                <td id="Ltr-kk" class="initial-consonants compound">ㄲ</td>
+                <td id="Ltr-tt" class="initial-consonants compound">ㄸ</td>
+                <td id="Ltr-pp" class="initial-consonants compound">ㅃ</td>
+                <td id="Ltr-ss" class="initial-consonants compound">ㅆ</td>
+                <td id="Ltr-jj" class="initial-consonants compound">ㅉ</td>
+            </tr>
+            <tr>
+                <td class="initial-consonant-sounds">g</td>
+                <td class="initial-consonant-sounds">n</td>
+                <td class="initial-consonant-sounds">d</td>
+                <td class="initial-consonant-sounds">r</td>
+                <td class="initial-consonant-sounds">m</td>
+                <td class="initial-consonant-sounds">b</td>
+                <td class="initial-consonant-sounds">s</td>
+                <td class="initial-consonant-sounds">-</td>
+                <td class="initial-consonant-sounds">j</td>
+                <td class="initial-consonant-sounds">ch</td>
+                <td class="initial-consonant-sounds">k</td>
+                <td class="initial-consonant-sounds">t</td>
+                <td class="initial-consonant-sounds">p</td>
+                <td class="initial-consonant-sounds">h</td>
+                <td class="initial-consonant-sounds">kk</td>
+                <td class="initial-consonant-sounds">tt</td>
+                <td class="initial-consonant-sounds">pp</td>
+                <td class="initial-consonant-sounds">ss</td>
+                <td class="initial-consonant-sounds">jj</td>
+            </tr>
+        </table>
+        <!-- ....................................................................................................... -->
+        <!-- Visible on mobile phones only
+        ............................................................................................................ -->
+        <section class="hide-above-550">
+            <table class="centered-tables">
+            <tr>
+                <td id="m-Ltr-g" class="initial-consonants-mobile">ㄱ</td>
+                <td id="m-Ltr-n" class="initial-consonants-mobile">ㄴ</td>
+                <td id="m-Ltr-d" class="initial-consonants-mobile">ㄷ</td>
+                <td id="m-Ltr-r" class="initial-consonants-mobile">ㄹ</td>
+                <td id="m-Ltr-m" class="initial-consonants-mobile">ㅁ</td>
+                <td id="m-Ltr-b" class="initial-consonants-mobile">ㅂ</td>
+                <td id="m-Ltr-s" class="initial-consonants-mobile">ㅅ</td>
+            </tr>
+            <tr>
+                <td class="initial-consonant-sounds">g</td>
+                <td class="initial-consonant-sounds">n</td>
+                <td class="initial-consonant-sounds">d</td>
+                <td class="initial-consonant-sounds">r</td>
+                <td class="initial-consonant-sounds">m</td>
+                <td class="initial-consonant-sounds">b</td>
+                <td class="initial-consonant-sounds">s</td>
+            </tr>
+            <tr>
+                <td id="m-Ltr-nosound" class="initial-consonants-mobile">ㅇ</td>
+                <td id="m-Ltr-j" class="initial-consonants-mobile">ㅈ</td>
+                <td id="m-Ltr-ch" class="initial-consonants-mobile">ㅊ</td>
+                <td id="m-Ltr-k" class="initial-consonants-mobile">ㅋ</td>
+                <td id="m-Ltr-t" class="initial-consonants-mobile">ㅌ</td>
+                <td id="m-Ltr-p" class="initial-consonants-mobile">ㅍ</td>
+                <td id="m-Ltr-h" class="initial-consonants-mobile">ㅎ</td>
+            </tr>
+            <tr>
+                <td class="initial-consonant-sounds">-</td>
+                <td class="initial-consonant-sounds">j</td>
+                <td class="initial-consonant-sounds">ch</td>
+                <td class="initial-consonant-sounds">k</td>
+                <td class="initial-consonant-sounds">t</td>
+                <td class="initial-consonant-sounds">p</td>
+                <td class="initial-consonant-sounds">h</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="m-Ltr-kk" class="initial-consonants-mobile compound">ㄲ</td>
+                <td id="m-Ltr-tt" class="initial-consonants-mobile compound">ㄸ</td>
+                <td id="m-Ltr-pp" class="initial-consonants-mobile compound">ㅃ</td>
+                <td id="m-Ltr-ss" class="initial-consonants-mobile compound">ㅆ</td>
+                <td id="m-Ltr-jj" class="initial-consonants-mobile compound">ㅉ</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="initial-consonant-sounds">kk</td>
+                <td class="initial-consonant-sounds">tt</td>
+                <td class="initial-consonant-sounds">pp</td>
+                <td class="initial-consonant-sounds">ss</td>
+                <td class="initial-consonant-sounds">jj</td>
+                <td></td>
+            </tr>
+            </table>
+        </section>
+        <!-- ....................................................................................................... -->
+        <br>
+         <p class="small-p">Being able to read them fluently is the first step on the way to reading korean. The application will help to achieve this.</p>
+        <br>
+        <p>Some vowels are vertical (ㅣ, ㅖ), some are horizontal (ㅗ, ㅠ), some are of both types (ㅘ, ㅞ).</p>
+        <p>This is considered when building up a syllable.</p>
+        <br>
+    </article>
+
+    <!-- I + M SYLLABLES
+    ................................................................................................................ -->
+    <article>
+        <h1 id="IMSyllables">I + M SYLLABLES</h1>
+        <a class="back-links" href="#Header">Back to CONTENT</a>
+        <br>
+        <br>
+        <p>Korean syllables always consist of two or three letters (the third is optional) combined in one of the special orders.</p>
+        <p>The first letter is always a consonant (initial). The second one is always a vowel (medial). The last one is a consonant (or a consonant cluster) and is called patchim (final).</p>
+        <p>If we take a horizontal vowel when building up a syllable, we combine letters like this</p>
+            <table class="syllable-boxes">
+                <tr><td class="bg-yellow jamo-hor">ㅅ</td></tr>
+                <tr><td class="align-center">+</td></tr>
+                <tr><td class="bg-orange jamo-hor">ㅗ</td></tr>
+            </table>
+        <p class="align-center">and get 소 (so).</p>
+        <br>
+        <p>If the vowel is vertical we combine them this way</p>
+        <table class="syllable-boxes">
+                <tr>
+                    <td class="bg-yellow jamo-ver">ㄴ</td>
+                    <td>+</td>
+                    <td class="bg-orange jamo-ver">ㅐ</td>
+                </tr>
+        </table>
+        <p class="align-center">and get 내 (nae).</p>
+        <p class="small-p">Actually, there are eight ways to write a syllable, but they are almost the same and use simple logic.</p>
+        <p>We have to keep I + M composition even if a syllable represents only a vowel sound like in 우 (u), 예 (ye). In this case we always put the letter ㅇ at the beginning of a syllable. ㅇ has no sound and isn't pronounced when used as an initial consonant. So 아 or 유 are pronounced the same way as just ㅏ or ㅠ etc. The rule works for all of the vowels.</p>
+        <p>Letters in syllables are always read from left to right then from top to bottom.</p>
+        <p>If we combine all the consonants with all the vowels we will get 399 syllables of I + M composition:</p>
+        <br>
+        <h2>Syllables</h2>
+        <p class="small-p">click on a syllable to hear it's sound</p>
+        <div class="row">
+            <div class="col-06">
+                <table class="right">
+                    <tr><td colspan="11" class="table-headers">Basic consonants + basic vowels</td></tr>
+                    <tr><td></td><td class="letters hide-below-550">ㅏ</td><td class="letters hide-below-550">ㅑ</td><td class="letters hide-below-550">ㅓ</td><td class="letters hide-below-550">ㅕ</td><td class="letters hide-below-550">ㅗ</td><td class="letters hide-below-550">ㅛ</td><td class="letters hide-below-550">ㅜ</td><td class="letters hide-below-550">ㅠ</td><td class="letters hide-below-550">ㅡ</td><td class="letters hide-below-550">ㅣ</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㄱ</td><td id="ga" class="syllables">가</td><td id="gya" class="syllables">갸</td><td id="geo" class="syllables">거</td><td id="gyeo" class="syllables">겨</td><td id="go" class="syllables">고</td><td id="gyo" class="syllables">교</td><td id="gu" class="syllables">구</td><td id="gyu" class="syllables">규</td><td id="geu" class="syllables">그</td><td id="gi" class="syllables">기</td></tr>
+                    <tr><td class="syllable-sounds">ga</td><td class="syllable-sounds">gya</td><td class="syllable-sounds">geo</td><td class="syllable-sounds">gyeo</td><td class="syllable-sounds">go</td><td class="syllable-sounds">gyo</td><td class="syllable-sounds">gu</td><td class="syllable-sounds">gyu</td><td class="syllable-sounds">geu</td><td class="syllable-sounds">gi</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㄴ</td><td id="na" class="syllables">나</td><td id="nya" class="syllables">냐</td><td id="neo" class="syllables">너</td><td id="nyeo" class="syllables">녀</td><td id="no" class="syllables">노</td><td id="nyo" class="syllables">뇨</td><td id="nu" class="syllables">누</td><td id="nyu" class="syllables">뉴</td><td id="neu" class="syllables">느</td><td id="ni" class="syllables">니</td></tr>
+                    <tr><td class="syllable-sounds">na</td><td class="syllable-sounds">nya</td><td class="syllable-sounds">neo</td><td class="syllable-sounds">nyeo</td><td class="syllable-sounds">no</td><td class="syllable-sounds">nyo</td><td class="syllable-sounds">nu</td><td class="syllable-sounds">nyu</td><td class="syllable-sounds">neu</td><td class="syllable-sounds">ni</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㄷ</td><td id="da" class="syllables">다</td><td id="dya" class="syllables">댜</td><td id="deo" class="syllables">더</td><td id="dyeo" class="syllables">뎌</td><td id="do" class="syllables">도</td><td id="dyo" class="syllables">됴</td><td id="du" class="syllables">두</td><td id="dyu" class="syllables">듀</td><td id="deu" class="syllables">드</td><td id="di" class="syllables">디</td></tr>
+                    <tr><td class="syllable-sounds">da</td><td class="syllable-sounds">dya</td><td class="syllable-sounds">deo</td><td class="syllable-sounds">dyeo</td><td class="syllable-sounds">do</td><td class="syllable-sounds">dyo</td><td class="syllable-sounds">du</td><td class="syllable-sounds">dyu</td><td class="syllable-sounds">deu</td><td class="syllable-sounds">di</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㄹ</td><td id="ra" class="syllables">라</td><td id="rya" class="syllables">랴</td><td id="reo" class="syllables">러</td><td id="ryeo" class="syllables">려</td><td id="ro" class="syllables">로</td><td id="ryo" class="syllables">료</td><td id="ru" class="syllables">루</td><td id="ryu" class="syllables">류</td><td id="reu" class="syllables">르</td><td id="ri" class="syllables">리</td></tr>
+                    <tr><td class="syllable-sounds">ra</td><td class="syllable-sounds">rya</td><td class="syllable-sounds">reo</td><td class="syllable-sounds">ryeo</td><td class="syllable-sounds">ro</td><td class="syllable-sounds">ryo</td><td class="syllable-sounds">ru</td><td class="syllable-sounds">ryu</td><td class="syllable-sounds">reu</td><td class="syllable-sounds">ri</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㅁ</td><td id="ma" class="syllables">마</td><td id="mya" class="syllables">먀</td><td id="meo" class="syllables">머</td><td id="myeo" class="syllables">며</td><td id="mo" class="syllables">모</td><td id="myo" class="syllables">묘</td><td id="mu" class="syllables">무</td><td id="myu" class="syllables">뮤</td><td id="meu" class="syllables">므</td><td id="mi" class="syllables">미</td></tr>
+                    <tr><td class="syllable-sounds">ma</td><td class="syllable-sounds">mya</td><td class="syllable-sounds">meo</td><td class="syllable-sounds">myeo</td><td class="syllable-sounds">mo</td><td class="syllable-sounds">myo</td><td class="syllable-sounds">mu</td><td class="syllable-sounds">myu</td><td class="syllable-sounds">meu</td><td class="syllable-sounds">mi</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㅂ</td><td id="ba" class="syllables">바</td><td id="bya" class="syllables">뱌</td><td id="beo" class="syllables">버</td><td id="byeo" class="syllables">벼</td><td id="bo" class="syllables">보</td><td id="byo" class="syllables">뵤</td><td id="bu" class="syllables">부</td><td id="byu" class="syllables">뷰</td><td id="beu" class="syllables">브</td><td id="bi" class="syllables">비</td></tr>
+                    <tr><td class="syllable-sounds">ba</td><td class="syllable-sounds">bya</td><td class="syllable-sounds">beo</td><td class="syllable-sounds">byeo</td><td class="syllable-sounds">bo</td><td class="syllable-sounds">byo</td><td class="syllable-sounds">bu</td><td class="syllable-sounds">byu</td><td class="syllable-sounds">beu</td><td class="syllable-sounds">bi</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㅅ</td><td id="sa" class="syllables">사</td><td id="sya" class="syllables">샤</td><td id="seo" class="syllables">서</td><td id="syeo" class="syllables">셔</td><td id="so" class="syllables">소</td><td id="syo" class="syllables">쇼</td><td id="su" class="syllables">수</td><td id="syu" class="syllables">슈</td><td id="seu" class="syllables">스</td><td id="si" class="syllables">시</td></tr>
+                    <tr><td class="syllable-sounds">sa</td><td class="syllable-sounds">sya</td><td class="syllable-sounds">seo</td><td class="syllable-sounds">syeo</td><td class="syllable-sounds">so</td><td class="syllable-sounds">syo</td><td class="syllable-sounds">su</td><td class="syllable-sounds">syu</td><td class="syllable-sounds">seu</td><td class="syllable-sounds">si</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㅇ</td><td id="a" class="syllables">아</td><td id="ya" class="syllables">야</td><td id="eo" class="syllables">어</td><td id="yeo" class="syllables">여</td><td id="o" class="syllables">오</td><td id="yo" class="syllables">요</td><td id="u" class="syllables">우</td><td id="yu" class="syllables">유</td><td id="eu" class="syllables">으</td><td id="i" class="syllables">이</td></tr>
+                    <tr><td class="syllable-sounds">a</td><td class="syllable-sounds">ya</td><td class="syllable-sounds">eo</td><td class="syllable-sounds">yeo</td><td class="syllable-sounds">o</td><td class="syllable-sounds">yo</td><td class="syllable-sounds">u</td><td class="syllable-sounds">yu</td><td class="syllable-sounds">eu</td><td class="syllable-sounds">i</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㅈ</td><td id="ja" class="syllables">자</td><td id="jya" class="syllables">쟈</td><td id="jeo" class="syllables">저</td><td id="jyeo" class="syllables">져</td><td id="jo" class="syllables">조</td><td id="jyo" class="syllables">죠</td><td id="ju" class="syllables">주</td><td id="jyu" class="syllables">쥬</td><td id="jeu" class="syllables">즈</td><td id="ji" class="syllables">지</td></tr>
+                    <tr><td class="syllable-sounds">ja</td><td class="syllable-sounds">jya</td><td class="syllable-sounds">jeo</td><td class="syllable-sounds">jyeo</td><td class="syllable-sounds">jo</td><td class="syllable-sounds">jyo</td><td class="syllable-sounds">ju</td><td class="syllable-sounds">jyu</td><td class="syllable-sounds">jeu</td><td class="syllable-sounds">ji</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㅊ</td><td id="cha" class="syllables">차</td><td id="chya" class="syllables">챠</td><td id="cheo" class="syllables">처</td><td id="chyeo" class="syllables">쳐</td><td id="cho" class="syllables">초</td><td id="chyo" class="syllables">쵸</td><td id="chu" class="syllables">추</td><td id="chyu" class="syllables">츄</td><td id="cheu" class="syllables">츠</td><td id="chi" class="syllables">치</td></tr>
+                    <tr><td class="syllable-sounds">cha</td><td class="syllable-sounds">chya</td><td class="syllable-sounds">cheo</td><td class="syllable-sounds">chyeo</td><td class="syllable-sounds">cho</td><td class="syllable-sounds">chyo</td><td class="syllable-sounds">chu</td><td class="syllable-sounds">chyu</td><td class="syllable-sounds">cheu</td><td class="syllable-sounds">chi</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㅋ</td><td id="ka" class="syllables">카</td><td id="kya" class="syllables">캬</td><td id="keo" class="syllables">커</td><td id="kyeo" class="syllables">켜</td><td id="ko" class="syllables">코</td><td id="kyo" class="syllables">쿄</td><td id="ku" class="syllables">쿠</td><td id="kyu" class="syllables">큐</td><td id="keu" class="syllables">크</td><td id="ki" class="syllables">키</td></tr>
+                    <tr><td class="syllable-sounds">ka</td><td class="syllable-sounds">kya</td><td class="syllable-sounds">keo</td><td class="syllable-sounds">kyeo</td><td class="syllable-sounds">ko</td><td class="syllable-sounds">kyo</td><td class="syllable-sounds">ku</td><td class="syllable-sounds">kyu</td><td class="syllable-sounds">keu</td><td class="syllable-sounds">ki</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㅌ</td><td id="ta" class="syllables">타</td><td id="tya" class="syllables">탸</td><td id="teo" class="syllables">터</td><td id="tyeo" class="syllables">텨</td><td id="to" class="syllables">토</td><td id="tyo" class="syllables">툐</td><td id="tu" class="syllables">투</td><td id="tyu" class="syllables">튜</td><td id="teu" class="syllables">트</td><td id="ti" class="syllables">티</td></tr>
+                    <tr><td class="syllable-sounds">ta</td><td class="syllable-sounds">tya</td><td class="syllable-sounds">teo</td><td class="syllable-sounds">tyeo</td><td class="syllable-sounds">to</td><td class="syllable-sounds">tyo</td><td class="syllable-sounds">tu</td><td class="syllable-sounds">tyu</td><td class="syllable-sounds">teu</td><td class="syllable-sounds">ti</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㅍ</td><td id="pa" class="syllables">파</td><td id="pya" class="syllables">퍄</td><td id="peo" class="syllables">퍼</td><td id="pyeo" class="syllables">펴</td><td id="po" class="syllables">포</td><td id="pyo" class="syllables">표</td><td id="pu" class="syllables">푸</td><td id="pyu" class="syllables">퓨</td><td id="peu" class="syllables">프</td><td id="pi" class="syllables">피</td></tr>
+                    <tr><td class="syllable-sounds">pa</td><td class="syllable-sounds">pya</td><td class="syllable-sounds">peo</td><td class="syllable-sounds">pyeo</td><td class="syllable-sounds">po</td><td class="syllable-sounds">pyo</td><td class="syllable-sounds">pu</td><td class="syllable-sounds">pyu</td><td class="syllable-sounds">peu</td><td class="syllable-sounds">pi</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㅎ</td><td id="ha" class="syllables">하</td><td id="hya" class="syllables">햐</td><td id="heo" class="syllables">허</td><td id="hyeo" class="syllables">혀</td><td id="ho" class="syllables">호</td><td id="hyo" class="syllables">효</td><td id="hu" class="syllables">후</td><td id="hyu" class="syllables">휴</td><td id="heu" class="syllables">흐</td><td id="hi" class="syllables">히</td></tr>
+                    <tr><td class="syllable-sounds">ha</td><td class="syllable-sounds">hya</td><td class="syllable-sounds">heo</td><td class="syllable-sounds">hyeo</td><td class="syllable-sounds">ho</td><td class="syllable-sounds">hyo</td><td class="syllable-sounds">hu</td><td class="syllable-sounds">hyu</td><td class="syllable-sounds">heu</td><td class="syllable-sounds">hi</td></tr>
+                </table>
+            </div>
+            <div class="col-06">
+                <table class="left">
+                    <tr><td colspan="12" class="table-headers">Basic consonants + compound vowels</td></tr>
+                    <tr><td class="letters hide-below-550">ㅐ</td><td class="letters hide-below-550">ㅒ</td><td class="letters hide-below-550">ㅔ</td><td class="letters hide-below-550">ㅖ</td><td class="letters hide-below-550">ㅘ</td><td class="letters hide-below-550">ㅙ</td><td class="letters hide-below-550">ㅚ</td><td class="letters hide-below-550">ㅝ</td><td class="letters hide-below-550">ㅞ</td><td class="letters hide-below-550">ㅟ</td><td class="letters hide-below-550">ㅢ</td><td></td></tr>
+                    <tr><td id="gae" class="syllables">개</td><td id="gyae" class="syllables">걔</td><td id="ge" class="syllables">게</td><td id="gye" class="syllables">계</td><td id="gwa" class="syllables">과</td><td id="gwae" class="syllables">괘</td><td id="goe" class="syllables">괴</td><td id="gwo" class="syllables">궈</td><td id="gwe" class="syllables">궤</td><td id="gwi" class="syllables">귀</td><td id="gui" class="syllables">긔</td></tr>
+                    <tr><td class="syllable-sounds">gae</td><td class="syllable-sounds">gyae</td><td class="syllable-sounds">ge</td><td class="syllable-sounds">gye</td><td class="syllable-sounds">gwa</td><td class="syllable-sounds">gwae</td><td class="syllable-sounds">goe</td><td class="syllable-sounds">gwo</td><td class="syllable-sounds">gwe</td><td class="syllable-sounds">gwi</td><td class="syllable-sounds">gui</td></tr>
+                    <tr><td id="nae" class="syllables">내</td><td id="nyae" class="syllables">냬</td><td id="ne" class="syllables">네</td><td id="nye" class="syllables">녜</td><td id="nwa" class="syllables">놔</td><td id="nwae" class="syllables">놰</td><td id="noe" class="syllables">뇌</td><td id="nwo" class="syllables">눠</td><td id="nwe" class="syllables">눼</td><td id="nwi" class="syllables">뉘</td><td id="nui" class="syllables">늬</td></tr>
+                    <tr><td class="syllable-sounds">nae</td><td class="syllable-sounds">nyae</td><td class="syllable-sounds">ne</td><td class="syllable-sounds">nye</td><td class="syllable-sounds">nwa</td><td class="syllable-sounds">nwae</td><td class="syllable-sounds">noe</td><td class="syllable-sounds">nwo</td><td class="syllable-sounds">nwe</td><td class="syllable-sounds">nwi</td><td class="syllable-sounds">nui</td></tr>
+                    <tr><td id="dae" class="syllables">대</td><td id="dyae" class="syllables">댸</td><td id="de" class="syllables">데</td><td id="dye" class="syllables">뎨</td><td id="dwa" class="syllables">돠</td><td id="dwae" class="syllables">돼</td><td id="doe" class="syllables">되</td><td id="dwo" class="syllables">둬</td><td id="dwe" class="syllables">뒈</td><td id="dwi" class="syllables">뒤</td><td id="dui" class="syllables">듸</td></tr>
+                    <tr><td class="syllable-sounds">dae</td><td class="syllable-sounds">dyae</td><td class="syllable-sounds">de</td><td class="syllable-sounds">dye</td><td class="syllable-sounds">dwa</td><td class="syllable-sounds">dwae</td><td class="syllable-sounds">doe</td><td class="syllable-sounds">dwo</td><td class="syllable-sounds">dwe</td><td class="syllable-sounds">dwi</td><td class="syllable-sounds">dui</td></tr>
+                    <tr><td id="rae" class="syllables">래</td><td id="ryae" class="syllables">럐</td><td id="re" class="syllables">레</td><td id="rye" class="syllables">례</td><td id="rwa" class="syllables">롸</td><td id="rwae" class="syllables">뢔</td><td id="roe" class="syllables">뢰</td><td id="rwo" class="syllables">뤄</td><td id="rwe" class="syllables">뤠</td><td id="rwi" class="syllables">뤼</td><td id="rui" class="syllables">릐</td></tr>
+                    <tr><td class="syllable-sounds">rae</td><td class="syllable-sounds">ryae</td><td class="syllable-sounds">re</td><td class="syllable-sounds">rye</td><td class="syllable-sounds">rwa</td><td class="syllable-sounds">rwae</td><td class="syllable-sounds">roe</td><td class="syllable-sounds">rwo</td><td class="syllable-sounds">rwe</td><td class="syllable-sounds">rwi</td><td class="syllable-sounds">rui</td></tr>
+                    <tr><td id="mae" class="syllables">매</td><td id="myae" class="syllables">먜</td><td id="me" class="syllables">메</td><td id="mye" class="syllables">몌</td><td id="mwa" class="syllables">뫄</td><td id="mwae" class="syllables">뫠</td><td id="moe" class="syllables">뫼</td><td id="mwo" class="syllables">뭐</td><td id="mwe" class="syllables">뭬</td><td id="mwi" class="syllables">뮈</td><td id="mui" class="syllables">믜</td></tr>
+                    <tr><td class="syllable-sounds">mae</td><td class="syllable-sounds">myae</td><td class="syllable-sounds">me</td><td class="syllable-sounds">mye</td><td class="syllable-sounds">mwa</td><td class="syllable-sounds">mwae</td><td class="syllable-sounds">moe</td><td class="syllable-sounds">mwo</td><td class="syllable-sounds">mwe</td><td class="syllable-sounds">mwi</td><td class="syllable-sounds">mui</td></tr>
+                    <tr><td id="bae" class="syllables">배</td><td id="byae" class="syllables">뱨</td><td id="be" class="syllables">베</td><td id="bye" class="syllables">볘</td><td id="bwa" class="syllables">봐</td><td id="bwae" class="syllables">봬</td><td id="boe" class="syllables">뵈</td><td id="bwo" class="syllables">붜</td><td id="bwe" class="syllables">붸</td><td id="bwi" class="syllables">뷔</td><td id="bui" class="syllables">븨</td></tr>
+                    <tr><td class="syllable-sounds">bae</td><td class="syllable-sounds">byae</td><td class="syllable-sounds">be</td><td class="syllable-sounds">bye</td><td class="syllable-sounds">bwa</td><td class="syllable-sounds">bwae</td><td class="syllable-sounds">boe</td><td class="syllable-sounds">bwo</td><td class="syllable-sounds">bwe</td><td class="syllable-sounds">bwi</td><td class="syllable-sounds">bui</td></tr>
+                    <tr><td id="sae" class="syllables">새</td><td id="syae" class="syllables">섀</td><td id="se" class="syllables">세</td><td id="sye" class="syllables">셰</td><td id="swa" class="syllables">솨</td><td id="swae" class="syllables">쇄</td><td id="soe" class="syllables">쇠</td><td id="swo" class="syllables">숴</td><td id="swe" class="syllables">쉐</td><td id="swi" class="syllables">쉬</td><td id="sui" class="syllables">싀</td></tr>
+                    <tr><td class="syllable-sounds">sae</td><td class="syllable-sounds">syae</td><td class="syllable-sounds">se</td><td class="syllable-sounds">sye</td><td class="syllable-sounds">swa</td><td class="syllable-sounds">swae</td><td class="syllable-sounds">soe</td><td class="syllable-sounds">swo</td><td class="syllable-sounds">swe</td><td class="syllable-sounds">swi</td><td class="syllable-sounds">sui</td></tr>
+                    <tr><td id="ae" class="syllables">애</td><td id="yae" class="syllables">얘</td><td id="e" class="syllables">에</td><td id="ye" class="syllables">예</td><td id="wa" class="syllables">와</td><td id="wae" class="syllables">왜</td><td id="oe" class="syllables">외</td><td id="wo" class="syllables">워</td><td id="we" class="syllables">웨</td><td id="wi" class="syllables">위</td><td id="ui" class="syllables">의</td></tr>
+                    <tr><td class="syllable-sounds">ae</td><td class="syllable-sounds">yae</td><td class="syllable-sounds">e</td><td class="syllable-sounds">ye</td><td class="syllable-sounds">wa</td><td class="syllable-sounds">wae</td><td class="syllable-sounds">oe</td><td class="syllable-sounds">wo</td><td class="syllable-sounds">we</td><td class="syllable-sounds">wi</td><td class="syllable-sounds">ui</td></tr>
+                    <tr><td id="jae" class="syllables">재</td><td id="jyae" class="syllables">쟤</td><td id="je" class="syllables">제</td><td id="jye" class="syllables">졔</td><td id="jwa" class="syllables">좌</td><td id="jwae" class="syllables">좨</td><td id="joe" class="syllables">죄</td><td id="jwo" class="syllables">줘</td><td id="jwe" class="syllables">줴</td><td id="jwi" class="syllables">쥐</td><td id="jui" class="syllables">즤</td></tr>
+                    <tr><td class="syllable-sounds">jae</td><td class="syllable-sounds">jyae</td><td class="syllable-sounds">je</td><td class="syllable-sounds">jye</td><td class="syllable-sounds">jwa</td><td class="syllable-sounds">jwae</td><td class="syllable-sounds">joe</td><td class="syllable-sounds">jwo</td><td class="syllable-sounds">jwe</td><td class="syllable-sounds">jwi</td><td class="syllable-sounds">jui</td></tr>
+                    <tr><td id="chae" class="syllables">채</td><td id="chyae" class="syllables">챼</td><td id="che" class="syllables">체</td><td id="chye" class="syllables">쳬</td><td id="chwa" class="syllables">촤</td><td id="chwae" class="syllables">쵀</td><td id="choe" class="syllables">최</td><td id="chwo" class="syllables">춰</td><td id="chwe" class="syllables">췌</td><td id="chwi" class="syllables">취</td><td id="chui" class="syllables">츼</td></tr>
+                    <tr><td class="syllable-sounds">chae</td><td class="syllable-sounds">chyae</td><td class="syllable-sounds">che</td><td class="syllable-sounds">chye</td><td class="syllable-sounds">chwa</td><td class="syllable-sounds">chwae</td><td class="syllable-sounds">choe</td><td class="syllable-sounds">chwo</td><td class="syllable-sounds">chwe</td><td class="syllable-sounds">chwi</td><td class="syllable-sounds">chui</td></tr>
+                    <tr><td id="kae" class="syllables">캐</td><td id="kyae" class="syllables">컈</td><td id="ke" class="syllables">케</td><td id="kye" class="syllables">켸</td><td id="kwa" class="syllables">콰</td><td id="kwae" class="syllables">쾌</td><td id="koe" class="syllables">쾨</td><td id="kwo" class="syllables">쿼</td><td id="kwe" class="syllables">퀘</td><td id="kwi" class="syllables">퀴</td><td id="kui" class="syllables">킈</td></tr>
+                    <tr><td class="syllable-sounds">kae</td><td class="syllable-sounds">kyae</td><td class="syllable-sounds">ke</td><td class="syllable-sounds">kye</td><td class="syllable-sounds">kwa</td><td class="syllable-sounds">kwae</td><td class="syllable-sounds">koe</td><td class="syllable-sounds">kwo</td><td class="syllable-sounds">kwe</td><td class="syllable-sounds">kwi</td><td class="syllable-sounds">kui</td></tr>
+                    <tr><td id="tae" class="syllables">태</td><td id="tyae" class="syllables">턔</td><td id="te" class="syllables">테</td><td id="tye" class="syllables">톄</td><td id="twa" class="syllables">톼</td><td id="twae" class="syllables">퇘</td><td id="toe" class="syllables">퇴</td><td id="two" class="syllables">퉈</td><td id="twe" class="syllables">퉤</td><td id="twi" class="syllables">튀</td><td id="tui" class="syllables">틔</td></tr>
+                    <tr><td class="syllable-sounds">tae</td><td class="syllable-sounds">tyae</td><td class="syllable-sounds">te</td><td class="syllable-sounds">tye</td><td class="syllable-sounds">twa</td><td class="syllable-sounds">twae</td><td class="syllable-sounds">toe</td><td class="syllable-sounds">two</td><td class="syllable-sounds">twe</td><td class="syllable-sounds">twi</td><td class="syllable-sounds">tui</td></tr>
+                    <tr><td id="pae" class="syllables">패</td><td id="pyae" class="syllables">퍠</td><td id="pe" class="syllables">페</td><td id="pye" class="syllables">폐</td><td id="pwa" class="syllables">퐈</td><td id="pwae" class="syllables">퐤</td><td id="poe" class="syllables">푀</td><td id="pwo" class="syllables">풔</td><td id="pwe" class="syllables">풰</td><td id="pwi" class="syllables">퓌</td><td id="pui" class="syllables">픠</td></tr>
+                    <tr><td class="syllable-sounds">pae</td><td class="syllable-sounds">pyae</td><td class="syllable-sounds">pe</td><td class="syllable-sounds">pye</td><td class="syllable-sounds">pwa</td><td class="syllable-sounds">pwae</td><td class="syllable-sounds">poe</td><td class="syllable-sounds">pwo</td><td class="syllable-sounds">pwe</td><td class="syllable-sounds">pwi</td><td class="syllable-sounds">pui</td></tr>
+                    <tr><td id="hae" class="syllables">해</td><td id="hyae" class="syllables">햬</td><td id="he" class="syllables">헤</td><td id="hye" class="syllables">혜</td><td id="hwa" class="syllables">화</td><td id="hwae" class="syllables">홰</td><td id="hoe" class="syllables">회</td><td id="hwo" class="syllables">훠</td><td id="hwe" class="syllables">훼</td><td id="hwi" class="syllables">휘</td><td id="hui" class="syllables">희</td></tr>
+                    <tr><td class="syllable-sounds">hae</td><td class="syllable-sounds">hyae</td><td class="syllable-sounds">he</td><td class="syllable-sounds">hye</td><td class="syllable-sounds">hwa</td><td class="syllable-sounds">hwae</td><td class="syllable-sounds">hoe</td><td class="syllable-sounds">hwo</td><td class="syllable-sounds">hwe</td><td class="syllable-sounds">hwi</td><td class="syllable-sounds">hui</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-06">
+                <table class="right">
+                    <tr><td colspan="11" class="table-headers">Compound consonants + basic vowels</td></tr>
+                    <tr><td></td><td class="letters hide-below-550">ㅏ</td><td class="letters hide-below-550">ㅑ</td><td class="letters hide-below-550">ㅓ</td><td class="letters hide-below-550">ㅕ</td><td class="letters hide-below-550">ㅗ</td><td class="letters hide-below-550">ㅛ</td><td class="letters hide-below-550">ㅜ</td><td class="letters hide-below-550">ㅠ</td><td class="letters hide-below-550">ㅡ</td><td class="letters hide-below-550">ㅣ</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㄲ</td><td id="kka" class="syllables">까</td><td id="kkya" class="syllables">꺄</td><td id="kkeo" class="syllables">꺼</td><td id="kkyeo" class="syllables">껴</td><td id="kko" class="syllables">꼬</td><td id="kkyo" class="syllables">꾜</td><td id="kku" class="syllables">꾸</td><td id="kkyu" class="syllables">뀨</td><td id="kkeu" class="syllables">끄</td><td id="kki" class="syllables">끼</td></tr>
+                    <tr><td class="syllable-sounds">kka</td><td class="syllable-sounds">kkya</td><td class="syllable-sounds">kkeo</td><td class="syllable-sounds">kkyeo</td><td class="syllable-sounds">kko</td><td class="syllable-sounds">kkyo</td><td class="syllable-sounds">kku</td><td class="syllable-sounds">kkyu</td><td class="syllable-sounds">kkeu</td><td class="syllable-sounds">kki</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㄸ</td><td id="tta" class="syllables">따</td><td id="ttya" class="syllables">땨</td><td id="tteo" class="syllables">떠</td><td id="ttyeo" class="syllables">뗘</td><td id="tto" class="syllables">또</td><td id="ttyo" class="syllables">뚀</td><td id="ttu" class="syllables">뚜</td><td id="ttyu" class="syllables">뜌</td><td id="tteu" class="syllables">뜨</td><td id="tti" class="syllables">띠</td></tr>
+                    <tr><td class="syllable-sounds">tta</td><td class="syllable-sounds">ttya</td><td class="syllable-sounds">tteo</td><td class="syllable-sounds">ttyeo</td><td class="syllable-sounds">tto</td><td class="syllable-sounds">ttyo</td><td class="syllable-sounds">ttu</td><td class="syllable-sounds">ttyu</td><td class="syllable-sounds">tteu</td><td class="syllable-sounds">tti</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㅃ</td><td id="ppa" class="syllables">빠</td><td id="ppya" class="syllables">뺘</td><td id="ppeo" class="syllables">뻐</td><td id="ppyeo" class="syllables">뼈</td><td id="ppo" class="syllables">뽀</td><td id="ppyo" class="syllables">뾰</td><td id="ppu" class="syllables">뿌</td><td id="ppyu" class="syllables">쀼</td><td id="ppeu" class="syllables">쁘</td><td id="ppi" class="syllables">삐</td></tr>
+                    <tr><td class="syllable-sounds">ppa</td><td class="syllable-sounds">ppya</td><td class="syllable-sounds">ppeo</td><td class="syllable-sounds">ppyeo</td><td class="syllable-sounds">ppo</td><td class="syllable-sounds">ppyo</td><td class="syllable-sounds">ppu</td><td class="syllable-sounds">ppyu</td><td class="syllable-sounds">ppeu</td><td class="syllable-sounds">ppi</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㅆ</td><td id="ssa" class="syllables">싸</td><td id="ssya" class="syllables">쌰</td><td id="sseo" class="syllables">써</td><td id="ssyeo" class="syllables">쎠</td><td id="sso" class="syllables">쏘</td><td id="ssyo" class="syllables">쑈</td><td id="ssu" class="syllables">쑤</td><td id="ssyu" class="syllables">쓔</td><td id="sseu" class="syllables">쓰</td><td id="ssi" class="syllables">씨</td></tr>
+                    <tr><td class="syllable-sounds">ssa</td><td class="syllable-sounds">ssya</td><td class="syllable-sounds">sseo</td><td class="syllable-sounds">ssyeo</td><td class="syllable-sounds">sso</td><td class="syllable-sounds">ssyo</td><td class="syllable-sounds">ssu</td><td class="syllable-sounds">ssyu</td><td class="syllable-sounds">sseu</td><td class="syllable-sounds">ssi</td></tr>
+                    <tr><td rowspan="2" class="letters hide-below-550">ㅉ</td><td id="jja" class="syllables">짜</td><td id="jjya" class="syllables">쨔</td><td id="jjeo" class="syllables">쩌</td><td id="jjyeo" class="syllables">쪄</td><td id="jjo" class="syllables">쪼</td><td id="jjyo" class="syllables">쬬</td><td id="jju" class="syllables">쭈</td><td id="jjyu" class="syllables">쮸</td><td id="jjeu" class="syllables">쯔</td><td id="jji" class="syllables">찌</td></tr>
+                    <tr><td class="syllable-sounds">jja</td><td class="syllable-sounds">jjya</td><td class="syllable-sounds">jjeo</td><td class="syllable-sounds">jjyeo</td><td class="syllable-sounds">jjo</td><td class="syllable-sounds">jjyo</td><td class="syllable-sounds">jju</td><td class="syllable-sounds">jjyu</td><td class="syllable-sounds">jjeu</td><td class="syllable-sounds">jji</td></tr>
+                </table>
+            </div>
+            <div class="col-06">
+                <table class="left">
+                    <tr><td colspan="11" class="table-headers">Compound consonants + compound vowels</td></tr>
+                    <tr><td class="letters hide-below-550">ㅐ</td><td class="letters hide-below-550">ㅒ</td><td class="letters hide-below-550">ㅔ</td><td class="letters hide-below-550">ㅖ</td><td class="letters hide-below-550">ㅘ</td><td class="letters hide-below-550">ㅙ</td><td class="letters hide-below-550">ㅚ</td><td class="letters hide-below-550">ㅝ</td><td class="letters hide-below-550">ㅞ</td><td class="letters hide-below-550">ㅟ</td><td class="letters hide-below-550">ㅢ</td><td></td></tr>
+                    <tr><td id="kkae" class="syllables">깨</td><td id="kkyae" class="syllables">꺠</td><td id="kke" class="syllables">께</td><td id="kkye" class="syllables">꼐</td><td id="kkwa" class="syllables">꽈</td><td id="kkwae" class="syllables">꽤</td><td id="kkoe" class="syllables">꾀</td><td id="kkwo" class="syllables">꿔</td><td id="kkwe" class="syllables">꿰</td><td id="kkwi" class="syllables">뀌</td><td id="kkui" class="syllables">끠</td></tr>
+                    <tr><td class="syllable-sounds">kkae</td><td class="syllable-sounds">kkyae</td><td class="syllable-sounds">kke</td><td class="syllable-sounds">kkye</td><td class="syllable-sounds">kkwa</td><td class="syllable-sounds">kkwae</td><td class="syllable-sounds">kkoe</td><td class="syllable-sounds">kkwo</td><td class="syllable-sounds">kkwe</td><td class="syllable-sounds">kkwi</td><td class="syllable-sounds">kkui</td></tr>
+                    <tr><td id="ttae" class="syllables">때</td><td id="ttyae" class="syllables">떄</td><td id="tte" class="syllables">떼</td><td id="ttye" class="syllables">뗴</td><td id="ttwa" class="syllables">똬</td><td id="ttwae" class="syllables">뙈</td><td id="ttoe" class="syllables">뙤</td><td id="ttwo" class="syllables">뚸</td><td id="ttwe" class="syllables">뛔</td><td id="ttwi" class="syllables">뛰</td><td id="ttui" class="syllables">띄</td></tr>
+                    <tr><td class="syllable-sounds">ttae</td><td class="syllable-sounds">ttyae</td><td class="syllable-sounds">tte</td><td class="syllable-sounds">ttye</td><td class="syllable-sounds">ttwa</td><td class="syllable-sounds">ttwae</td><td class="syllable-sounds">ttoe</td><td class="syllable-sounds">ttwo</td><td class="syllable-sounds">ttwe</td><td class="syllable-sounds">ttwi</td><td class="syllable-sounds">ttui</td></tr>
+                    <tr><td id="ppae" class="syllables">빼</td><td id="ppyae" class="syllables">뺴</td><td id="ppe" class="syllables">뻬</td><td id="ppye" class="syllables">뼤</td><td id="ppwa" class="syllables">뽜</td><td id="ppwae" class="syllables">뽸</td><td id="ppoe" class="syllables">뾔</td><td id="ppwo" class="syllables">뿨</td><td id="ppwe" class="syllables">쀄</td><td id="ppwi" class="syllables">쀠</td><td id="ppui" class="syllables">쁴</td></tr>
+                    <tr><td class="syllable-sounds">ppae</td><td class="syllable-sounds">ppyae</td><td class="syllable-sounds">ppe</td><td class="syllable-sounds">ppye</td><td class="syllable-sounds">ppwa</td><td class="syllable-sounds">ppwae</td><td class="syllable-sounds">ppoe</td><td class="syllable-sounds">ppwo</td><td class="syllable-sounds">ppwe</td><td class="syllable-sounds">ppwi</td><td class="syllable-sounds">ppui</td></tr>
+                    <tr><td id="ssae" class="syllables">쌔</td><td id="ssyae" class="syllables">썌</td><td id="sse" class="syllables">쎄</td><td id="ssye" class="syllables">쎼</td><td id="sswa" class="syllables">쏴</td><td id="sswae" class="syllables">쐐</td><td id="ssoe" class="syllables">쐬</td><td id="sswo" class="syllables">쒀</td><td id="sswe" class="syllables">쒜</td><td id="sswi" class="syllables">쒸</td><td id="ssui" class="syllables">씌</td></tr>
+                    <tr><td class="syllable-sounds">ssae</td><td class="syllable-sounds">ssyae</td><td class="syllable-sounds">sse</td><td class="syllable-sounds">ssye</td><td class="syllable-sounds">sswa</td><td class="syllable-sounds">sswae</td><td class="syllable-sounds">ssoe</td><td class="syllable-sounds">sswo</td><td class="syllable-sounds">sswe</td><td class="syllable-sounds">sswi</td><td class="syllable-sounds">ssui</td></tr>
+                    <tr><td id="jjae" class="syllables">째</td><td id="jjyae" class="syllables">쨰</td><td id="jje" class="syllables">쩨</td><td id="jjye" class="syllables">쪠</td><td id="jjwa" class="syllables">쫘</td><td id="jjwae" class="syllables">쫴</td><td id="jjoe" class="syllables">쬐</td><td id="jjwo" class="syllables">쭤</td><td id="jjwe" class="syllables">쮀</td><td id="jjwi" class="syllables">쮜</td><td id="jjui" class="syllables">쯰</td></tr>
+                    <tr><td class="syllable-sounds">jjae</td><td class="syllable-sounds">jjyae</td><td class="syllable-sounds">jje</td><td class="syllable-sounds">jjye</td><td class="syllable-sounds">jjwa</td><td class="syllable-sounds">jjwae</td><td class="syllable-sounds">jjoe</td><td class="syllable-sounds">jjwo</td><td class="syllable-sounds">jjwe</td><td class="syllable-sounds">jjwi</td><td class="syllable-sounds">jjui</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <p class="small-p">To read all of them fluently is the next step. The application will help.</p>
+        <br>
+    </article>
+
+    <!-- I + M + F SYLLABLES
+    ................................................................................................................ -->
+    <article>
+        <h1 id="IMFSyllables">I + M + F SYLLABLES</h1>
+        <a class="back-links" href="#Header">Back to CONTENT</a>
+        <br>
+        <br>
+        <p>There are more complex syllables. Those are of I + M + F composition. They are over 10&#160;000 and visualizing them in a table doesn't make sense. For example: 쌙 (ssaen), 툔 (tyon), 응 (eung), 뿄 (ppyot), 앹 (aet).</p>
+        <p>Only a consonant or a consonant cluster can be used as a final letter. It's called patchim.</p>
+        <p>Their sound may differ from their "initial" sound.</p>
+        <br>
+
+        <h2 id="Final-consonants">Final consonants</h2>
+        <h3 class="align-center">(patchims)</h3>
+        <p class="small-p">click on a letter to hear it's sound <a class="note-links" href="#Note-01">*</a></p>
+        <!-- Hidden on mobile phones only
+        ............................................................................................................ -->
+        <table class="centered-tables hide-below-550">
+            <tr>
+                <td id="Ptch-k-01" class="final-consonants">ㄱ</td>
+                <td id="Ptch-n-01" class="final-consonants">ㄴ</td>
+                <td id="Ptch-t-01" class="final-consonants">ㄷ</td>
+                <td id="Ptch-l-r" class="final-consonants">ㄹ</td>
+                <td id="Ptch-m" class="final-consonants">ㅁ</td>
+                <td id="Ptch-b" class="final-consonants">ㅂ</td>
+                <td id="Ptch-t-02" class="final-consonants">ㅅ</td>
+                <td id="Ptch-ng" class="final-consonants">ㅇ</td>
+                <td id="Ptch-t-03" class="final-consonants">ㅈ</td>
+                <td id="Ptch-t-04" class="final-consonants">ㅊ</td>
+                <td id="Ptch-k-02" class="final-consonants">ㅋ</td>
+                <td id="Ptch-t-05" class="final-consonants">ㅌ</td>
+                <td id="Ptch-p-01" class="final-consonants">ㅍ</td>
+                <td id="Ptch-t-06" class="final-consonants">ㅎ</td>
+                <td id="Ptch-k-03" class="final-consonants">ㄲ</td>
+                <td id="Ptch-t-07" class="final-consonants">ㅆ</td>
+                <td id="Ptch-k-04" class="final-consonants compound">ㄳ</td>
+                <td id="Ptch-n-02" class="final-consonants compound">ㄵ</td>
+                <td id="Ptch-n-03" class="final-consonants compound">ㄶ</td>
+                <td id="Ptch-k-l" class="final-consonants compound">ㄺ</td>
+                <td id="Ptch-m-l" class="final-consonants compound">ㄻ</td>
+                <td id="Ptch-p-l" class="final-consonants compound">ㄼ</td>
+                <td id="Ptch-l-01" class="final-consonants compound">ㄽ</td>
+                <td id="Ptch-l-02" class="final-consonants compound">ㄾ</td>
+                <td id="Ptch-p-02" class="final-consonants compound">ㄿ</td>
+                <td id="Ptch-l-03" class="final-consonants compound">ㅀ</td>
+                <td id="Ptch-p-03" class="final-consonants compound">ㅄ</td>
+            </tr>
+            <tr>
+                <td class="final-consonant-sounds">k</td>
+                <td class="final-consonant-sounds">n</td>
+                <td class="final-consonant-sounds">t</td>
+                <td class="final-consonant-sounds">l/r</td>
+                <td class="final-consonant-sounds">m</td>
+                <td class="final-consonant-sounds">b</td>
+                <td class="final-consonant-sounds">t</td>
+                <td class="final-consonant-sounds">ng</td>
+                <td class="final-consonant-sounds">t</td>
+                <td class="final-consonant-sounds">t</td>
+                <td class="final-consonant-sounds">k</td>
+                <td class="final-consonant-sounds">t</td>
+                <td class="final-consonant-sounds">p</td>
+                <td class="final-consonant-sounds">t</td>
+                <td class="final-consonant-sounds">k</td>
+                <td class="final-consonant-sounds">t</td>
+                <td class="final-consonant-sounds">k</td>
+                <td class="final-consonant-sounds">n</td>
+                <td class="final-consonant-sounds">n</td>
+                <td class="final-consonant-sounds">k/l</td>
+                <td class="final-consonant-sounds">m/l</td>
+                <td class="final-consonant-sounds">p/l</td>
+                <td class="final-consonant-sounds">l</td>
+                <td class="final-consonant-sounds">l</td>
+                <td class="final-consonant-sounds">p</td>
+                <td class="final-consonant-sounds">l</td>
+                <td class="final-consonant-sounds">p</td>
+            </tr>
+        </table>
+        <!-- ....................................................................................................... -->
+        <!-- Visible on mobile phones only
+        ............................................................................................................ -->
+        <section class="hide-above-550">
+            <table class="centered-tables">
+                <tr>
+                    <td id="m-Ptch-k-01" class="final-consonants-mobile">ㄱ</td>
+                    <td id="m-Ptch-n-01" class="final-consonants-mobile">ㄴ</td>
+                    <td id="m-Ptch-t-01" class="final-consonants-mobile">ㄷ</td>
+                    <td id="m-Ptch-l-r" class="final-consonants-mobile">ㄹ</td>
+                    <td id="m-Ptch-m" class="final-consonants-mobile">ㅁ</td>
+                    <td id="m-Ptch-b" class="final-consonants-mobile">ㅂ</td>
+                    <td id="m-Ptch-t-02" class="final-consonants-mobile">ㅅ</td>
+                </tr>
+                <tr>
+                    <td class="final-consonant-sounds">k</td>
+                    <td class="final-consonant-sounds">n</td>
+                    <td class="final-consonant-sounds">t</td>
+                    <td class="final-consonant-sounds">l/r</td>
+                    <td class="final-consonant-sounds">m</td>
+                    <td class="final-consonant-sounds">b</td>
+                    <td class="final-consonant-sounds">t</td>
+                </tr>
+            </table>
+            <table class="centered-tables">
+                <tr>
+                    <td id="m-Ptch-ng" class="final-consonants-mobile">ㅇ</td>
+                    <td id="m-Ptch-t-03" class="final-consonants-mobile">ㅈ</td>
+                    <td id="m-Ptch-t-04" class="final-consonants-mobile">ㅊ</td>
+                    <td id="m-Ptch-k-02" class="final-consonants-mobile">ㅋ</td>
+                    <td id="m-Ptch-t-05" class="final-consonants-mobile">ㅌ</td>
+                    <td id="m-Ptch-p-01" class="final-consonants-mobile">ㅍ</td>
+                    <td id="m-Ptch-t-06" class="final-consonants-mobile">ㅎ</td>
+                </tr>
+                <tr>
+                    <td class="final-consonant-sounds">ng</td>
+                    <td class="final-consonant-sounds">t</td>
+                    <td class="final-consonant-sounds">t</td>
+                    <td class="final-consonant-sounds">k</td>
+                    <td class="final-consonant-sounds">t</td>
+                    <td class="final-consonant-sounds">p</td>
+                    <td class="final-consonant-sounds">t</td>
+                </tr>
+            </table>
+            <table class="centered-tables">
+                <tr>
+                    <td id="m-Ptch-k-03" class="final-consonants-mobile">ㄲ</td>
+                    <td id="m-Ptch-t-07" class="final-consonants-mobile">ㅆ</td>
+                    <td id="m-Ptch-k-04" class="final-consonants-mobile compound">ㄳ</td>
+                    <td id="m-Ptch-n-02" class="final-consonants-mobile compound">ㄵ</td>
+                    <td id="m-Ptch-n-03" class="final-consonants-mobile compound">ㄶ</td>
+                    <td id="m-Ptch-k-l" class="final-consonants-mobile compound">ㄺ</td>
+                    <td id="m-Ptch-m-l" class="final-consonants-mobile compound">ㄻ</td>
+                </tr>
+                <tr>
+                    <td class="final-consonant-sounds">k</td>
+                    <td class="final-consonant-sounds">t</td>
+                    <td class="final-consonant-sounds">k</td>
+                    <td class="final-consonant-sounds">n</td>
+                    <td class="final-consonant-sounds">n</td>
+                    <td class="final-consonant-sounds">k/l</td>
+                    <td class="final-consonant-sounds">m/l</td>
+                </tr>
+            </table>
+            <table class="centered-tables">
+                <tr>
+                    <td id="m-Ptch-p-l" class="final-consonants-mobile compound">ㄼ</td>
+                    <td id="m-Ptch-l-01" class="final-consonants-mobile compound">ㄽ</td>
+                    <td id="m-Ptch-l-02" class="final-consonants-mobile compound">ㄾ</td>
+                    <td id="m-Ptch-p-02" class="final-consonants-mobile compound">ㄿ</td>
+                    <td id="m-Ptch-l-03" class="final-consonants-mobile compound">ㅀ</td>
+                    <td id="m-Ptch-p-03" class="final-consonants-mobile compound">ㅄ</td>
+                </tr>
+                <tr>
+                    <td class="final-consonant-sounds">p/l</td>
+                    <td class="final-consonant-sounds">l</td>
+                    <td class="final-consonant-sounds">l</td>
+                    <td class="final-consonant-sounds">p</td>
+                    <td class="final-consonant-sounds">l</td>
+                    <td class="final-consonant-sounds">p</td>
+                </tr>
+            </table>
+        </section>
+        <!-- ....................................................................................................... -->
+        <br>
+        <p class="small-p">If we can read syllables with final consonants then we almost can read words. The application generates this kind of syllables randomly in an endless loop.</p>
+        <br>
+        <p>Note, for example, that the letter ㅇ now has ng ([ŋ]) sound instead of none, and the letter ㅅ sounds like t instead of s.</p>
+        <p>Some of them sound differently depending on a situation (i.g., ㄺ can be pronounced as both k and l).</p>
+        <p>There are rules about how a patchim is read depending on letters it is between. Learning those rules until you can read words of two or more syllables without mistakes will take time and practice.</p>
+        <p>In my opinion, the best result is achieved by using workbooks and writing exercises from books. I would recommend exactly this way.</p>
+        <p>When building up an I + M + F syllable we follow the same rules as the previous ones.</p>
+        <p>If the vowel is horizontal we combine letters like</p>
+        <table class="syllable-boxes">
+            <tr><td class="bg-orange jamo-hor">ㄱ</td></tr>
+            <tr><td class="align-center">+</td></tr>
+            <tr><td class="bg-yellow jamo-hor">ㅡ</td></tr>
+            <tr><td class="align-center">+</td></tr>
+            <tr><td class="bg-orange jamo-hor">ㄹ</td></tr>
+        </table>
+        <p class="align-center">and get 글 (geul).</p>
+        <br>
+        <p>If it's a vertical one we do</p>
+        <table class="syllable-boxes">
+            <tr> <td class="bg-orange jamo-ver">ㅎ</td><td>+</td><td class="bg-yellow jamo-ver">ㅏ</td></tr>
+            <tr><td colspan="3" class="align-right">+</td></tr>
+            <tr><td colspan="3" class="bg-orange jamo-hor">ㄴ</td></tr>
+        </table>
+        <p class="align-center">and get 한 (han).</p>
+        <br>
+    </article>
+
+    <!-- IF YOU ARE A NOVICE
+    ................................................................................................................ -->
+    <article>
+        <h1 id="If-you-are">IF YOU ARE A NOVICE</h1>
+        <a class="back-links" href="#Header">Back to CONTENT</a>
+        <br>
+        <br>
+        <p>You may have questions like:</p>
+        <p>- why do they write the sound of ㄱ like "g" but pronounce it "k"?</p>
+        <p>- what's the difference between ㄱ, ㅋ and ㄲ (aren't they pronounced the same way)?</p>
+        <p>- what's the difference between ㅗ and ㅜ?</p>
+        <p>- what's the difference between ㅐ and ㅔ?</p>
+        <p>- why is "m" often sounds more like "b"?</p>
+        <p>You will get used to this and understand the things in time as you read, watch and listen to different sources of information.</p>
+        <p>There are many good videos about all your questions on YouTube.</p>
+        <p>I have attached some below as an example.</p>
+        <br>
+    </article>
+
+    <!-- LINKS
+    ................................................................................................................ -->
+    <article id="Links">
+        <h1>LINKS</h1>
+        <a class="back-links" href="#Header">Back to CONTENT</a>
+        <br>
+        <br>
+        <p>&#160; <a class="bottom-links" href="https://korean.dict.naver.com/koendict/#/main">Naver</a> is the most popular Korean-English (or Korean-whatever else) dictionary.</p>
+        <p>A <a class="bottom-links" href="https://www.youtube.com/watch?v=zQwL3L1_5a8">video</a> about why "m" sounds like "b" and "n" sounds like "d".</p>
+        <p>A <a class="bottom-links" href="https://www.youtube.com/shorts/E_O-Xacz0sA">video</a> about the difference between ㄱ, ㅋ and ㄲ sounds.</p>
+        <p>A <a class="bottom-links" href="https://www.youtube.com/watch?v=WMrkrcd46tQ">video</a> about the difference between ㅗ and ㅜ.</p>
+        <br>
+        <br>
+        <p id="Note-01">* The speech synthesizer is not the best way to get how patchims sound. It would be much better to learn them listening to how native speakers pronounce them. In other cases the synthesizer is ok. <a class="back-links" href="#Final-consonants">go back</a></p>
+    </article>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- JAVASCRIPT
+    ................................................................................................................ -->
+    <script src="{{ url_for('static', filename='js/theory-sound.js')}}"></script>
+
+</body>
+</html>

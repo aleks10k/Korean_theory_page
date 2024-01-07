@@ -1,0 +1,307 @@
+
+body {
+  background-color: rgb(35, 35, 35);
+  font-family:      'IBM Plex Mono', monospace;
+  margin:           0 0 0 0;
+}
+
+* {
+  box-sizing:       border-box;
+}
+
+.row::after {
+  content:          "";
+  clear:            both;
+  display:          table;
+}
+
+[class*="col-"] {
+  float:            left;
+  padding:          15px;
+}
+
+.col-01     {width: 8.33%;}
+.col-02     {width: 16.66%;}
+.col-03     {width: 25%;}
+.col-04     {width: 33.33%;}
+.col-05     {width: 41.66%;}
+.col-06     {width: 50%;}
+.col-07     {width: 58.33%;}
+.col-08     {width: 66.66%;}
+.col-09     {width: 75%;}
+.col-10     {width: 83.33%;}
+.col-11     {width: 91.66%;}
+.col-12     {width: 100%;}
+
+#Logo-bar {
+  background-color: rgb(35, 35, 35);
+  box-shadow:       0 10px rgba(35, 35, 35, 0.85);
+  height:           85px;
+}
+
+#Logo-bar img {
+  display:          inline-block;
+  margin:           0 0 0 9.5%;
+}
+
+#Logo-bar-mobile {
+  background-color: rgb(35, 35, 35);
+  border-bottom:    1px solid rgb(249, 188, 96);
+  box-shadow:       0 4px rgba(35, 35, 35, 0.85);
+  height:           52px;
+  padding:          2px 0 0 0;
+  text-align:       right;
+}
+
+#Logo-bar-mobile img {
+  float:            left;
+  margin:           0 0 0 25px;
+}
+
+.links {
+  background-color: transparent;
+  border:           3px solid rgba(35, 35, 35, 0.5);
+  border-radius:    8px;
+  color:            rgba(35, 35, 35, 0.5);
+  display:          block;
+  font-size:        1.5em;
+  text-align:       center;
+  text-decoration:  none;
+  transition:       0.1s;
+  padding:          10px 0 10px 0;
+  width:            100%;
+}
+
+.links:hover {
+  border:           3px solid rgb(35, 35, 35);
+  color:            rgb(35, 35, 35);
+  transform:        scale(1.1, 1.1);
+}
+
+.links-mobile {
+  background-color: transparent;
+  color:            rgb(249, 188, 96);
+  display:          block;
+  font-size:        0.6;
+  text-align:       center;
+  padding:          0 0 0 15px;
+  margin:           12px 0 0 0;
+}
+
+h1 {
+  background-color: rgb(249, 188, 96);
+  border-top:       3px solid rgb(35, 35, 35);
+  margin:           0 50px 50px 5%;
+  padding:          72px 0 16px 0;
+  width:            400px;
+}
+
+h1, h2 {
+  text-align:       center;
+}
+
+p {
+  font-size:        1.3em;
+  margin-left:      5%;
+  margin-right:     5%;
+}
+
+td {
+  padding:          4px;
+  transition:       0.1s;
+}
+
+article {
+  background-color: rgb(248, 245, 242);
+  margin:           0 20%;
+  padding:          0 0 150px 0;
+}
+
+.content-links {
+  background-color: rgb(249, 188, 96);
+  color:            rgb(35, 35, 35);
+  display:          block;
+  font-weight:      600;
+  margin-top:       10px;
+  margin-left:      auto;
+  margin-right:     auto;
+  padding:          4px 10px;
+  text-decoration:  none;
+  width:            16%;
+}
+
+.content-links:hover {
+  background-color: rgb(35, 35, 35);
+  color:            rgb(249, 188, 96);
+}
+
+.back-links {
+  background-color: rgb(249, 188, 96);
+  color:            rgb(35, 35, 35);
+  margin-left:      5%;
+}
+
+.small-p {
+  color:            rgb(128, 128, 128);
+  font-size:        1em;
+  text-align:       center;
+}
+
+.centered-tables {
+  margin-left:      auto;
+  margin-right:     auto;
+}
+
+.initial-consonants-mobile,
+.medial-vowels-mobile,
+.final-consonants-mobile {
+  background-color: rgb(249, 188, 96);
+  font-size:        3em;
+  font-weight:      600;
+}
+
+.initial-consonants,
+.medial-vowels,
+.final-consonants,
+.syllables {
+  background-color: rgb(249, 188, 96);
+  font-size:        2.5em;
+  font-weight:      600;
+  text-align:       center;
+}
+
+.final-consonants {
+  font-size:        2em;
+}
+
+.syllables {
+  font-size:        2em;
+}
+
+.compound {
+  background-color: rgb(35, 35, 35);
+  color:            rgb(249, 188, 96);
+}
+
+.initial-consonant-sounds,
+.medial-vowel-sounds,
+.final-consonant-sounds {
+  color:            rgb(35, 35, 35);
+  font-size:        1.1em;
+  font-weight:      600;
+  text-align:       center;
+}
+
+td.initial-consonants:hover,
+td.medial-vowels:hover,
+td.final-consonants:hover {
+  border-radius:    2px;
+  box-shadow:       3px 3px 10px rgba(35, 35, 35, 0.75);
+  cursor:           pointer;
+  transform:        translate3d(0, -14px, 0) scale(1.6, 1.6);
+}
+
+td.syllables:hover {
+  border-radius:    2px;
+  cursor:           pointer;
+  transform:        translate3d(0, -4px, 0) scale(1.4, 1.4);
+}
+
+td.initial-consonants-mobile:active,
+td.medial-vowels-mobile:active,
+td.final-consonants-mobile:active,
+td.initial-consonants:active,
+td.medial-vowels:active,
+td.final-consonants:active,
+td.syllables:active {
+  background-color: rgb(255, 137, 6);
+}
+
+.syllable-boxes {
+  margin-top:       0;
+  margin-left:      auto;
+  margin-bottom:    0;
+  margin-right:     auto;
+  padding:          0 0 0 0;
+}
+
+.syllable-boxes p {
+  margin:           15px 0;
+}
+
+.jamo-hor {
+  font-size:        2em;
+  line-height:      1;
+  padding:          0 15px;
+  text-align:       center;
+}
+
+.jamo-ver {
+  font-size:        2em;
+  line-height:      1;
+  padding:          18px 0 18px 0;
+}
+
+.table-headers {
+  text-align:       center;
+}
+
+.letters {
+  color:            rgb(255, 137, 6);
+  font-size:        1.5em;
+  padding:          10px;
+  text-align:       center;
+  vertical-align:   top;
+}
+
+.syllable-sounds {
+  color:            rgb(128, 128, 128);
+  font-size:        0.8em;
+  text-align:       center;
+}
+
+.bottom-links {
+  background-color: rgb(35, 35, 35);
+  border-radius:    3px;
+  color:            rgb(249, 188, 96);
+  padding:          4px;
+}
+
+.bottom-links:hover {
+  background-color: rgb(249, 188, 96);
+  color:            rgb(35, 35, 35);
+}
+
+.note-links {
+  color:            orange;
+  font-size:        1.5em;
+}
+
+#Note-01 {
+  font-size:        1em;
+}
+
+.align-center       {text-align: center;}
+.align-right        {text-align: right;}
+
+.bg-light           {background-color: rgb(248, 245, 242);}
+.bg-orange          {background-color: rgb(255, 137, 6);}
+.bg-yellow          {background-color: rgb(249, 188, 96);}
+
+.border-none        {border: none;}
+
+.icon-font          {font-family: 'Material Icons', sans-serif; font-size: 2em;}
+
+.margin-bottom      {margin-bottom: 16px;}
+
+.remove-top-margin  {margin-top: 0;}
+
+.right              {margin-left: auto;}
+
+@media (min-width: 550px) {
+  .hide-above-550   {display: none;}
+}
+
+@media (max-width: 550px) {
+  .hide-below-550   {display: none;}
+}
